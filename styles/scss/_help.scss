@@ -1,0 +1,91 @@
+.section-help {
+  color: #FFFFFF;
+  &__container {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 80px 127px 100px;
+    box-sizing: border-box;
+    display: flex;
+    row-gap: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__h3 {
+    @include font_h3;
+    text-align: center;
+  }
+  &__elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: space-between;
+    row-gap: 60px;
+    column-gap: 59px;
+    // width: 1026px;
+    height: 281px;
+    column-gap: 120px;
+    &-elem {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 30px;
+      // column-gap: 59px;
+      &-food {
+        background: url('../../assets/svg/petfood.svg');
+        width: 47.86px;
+        height: 60px;
+      }
+      &-transport {
+        background: url('../../assets/svg/transportation.svg');
+        width: 59.95px;
+        height: 60px;
+      }
+      &-toys {
+        background: url('../../assets/svg/toys.svg');
+        width: 60px;
+        height: 60px;
+      }
+      &-bowls {
+        background: url('../../assets/svg/bowls-and-cups.svg');
+        width: 60px;
+        height: 56.82px;
+      }
+      &-shampoos {
+        background: url('../../assets/svg/shampoos.svg');
+        width: 31.3px;
+        height: 60px;
+      }
+      &-vitamins {
+        background: url('../../assets/svg/vitamins.svg');
+        width: 60px;
+        height: 54.16px;
+      }
+      &-medicines {
+        background: url('../../assets/svg/medicines.svg');
+        width: 60px;
+        height: 60px;
+      }
+      &-collars {
+        background: url('../../assets/svg/collars-or-leashes.svg');
+        width: 60px;
+        height: 52.43px;
+      }
+      &-sleeping {
+        background: url('../../assets/svg/sleeping-area.svg');
+        width: 56.29px;
+        height: 60px;
+      }
+      &-text {
+        color: #545454;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+      }
+    }
+  }
+}
