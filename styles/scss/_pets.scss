@@ -3,7 +3,7 @@
   &__container {
     margin: 0 auto;
     width: 1280px;
-    height: 877px;
+    min-height: 877px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

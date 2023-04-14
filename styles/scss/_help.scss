@@ -2,14 +2,21 @@
   color: #FFFFFF;
   &__container {
     width: 1280px;
+    max-height: 611px;
     margin: 0 auto;
-    padding: 80px 127px 100px;
+    padding: 80px 40px 100px;
     box-sizing: border-box;
-    display: flex;
-    row-gap: 60px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // row-gap: 60px;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 1200px;
+      row-gap: 60px;
+    }
   }
   &__h3 {
     @include font_h3;
@@ -18,20 +25,17 @@
   &__elements {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
     align-items: space-between;
-    row-gap: 60px;
-    column-gap: 59px;
-    // width: 1026px;
-    height: 281px;
-    column-gap: 120px;
+    gap: 60px 120px;
     &-elem {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       row-gap: 30px;
-      // column-gap: 59px;
       &-food {
         background: url('../../assets/svg/petfood.svg');
         width: 47.86px;
