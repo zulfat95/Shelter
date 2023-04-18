@@ -36,7 +36,7 @@
       align-items: center;
       transition: 0.5s all ease;
     }
-    a:hover span {
+    a:hover h1 {
       color: #FFFFFF; // logo span
       transition: 0.5s all ease;
     }
@@ -89,7 +89,7 @@
     width: 460px;
     height: 322px;
     margin-top: 163px;
-    &-h1 {
+    &-h2 {
       font-family: 'Georgia';
       font-style: normal;
       font-weight: 400;

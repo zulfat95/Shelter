@@ -30,7 +30,7 @@
   align-items: center;
   transition: 0.5s all ease;
 }
-.header .logo-title a:hover span {
+.header .logo-title a:hover h1 {
   color: #FFFFFF;
   transition: 0.5s all ease;
 }
@@ -83,7 +83,7 @@
   height: 322px;
   margin-top: 163px;
 }
-.section-notonly__content-h1 {
+.section-notonly__content-h2 {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -142,7 +142,11 @@ a {
   color: inherit;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
@@ -660,6 +664,10 @@ h1, h2, h3, h4, p {
   padding: 30px 40px;
 }
 
+.light h1 {
+  margin: 0;
+}
+
 .light .logo-title__title,
 .light .header__container-nav_list a {
   color: #545454;
@@ -667,7 +675,7 @@ h1, h2, h3, h4, p {
 
 .light .logo-title__subtitle,
 .light a.active-li,
-.header.light a:hover span,
+.header.light a:hover h1,
 .header.light a:hover {
   color: #292929;
 }

@@ -6,6 +6,10 @@
   padding: 30px 40px;
 }
 
+.light h1 {
+  margin: 0;
+}
+
 .light .logo-title__title,
 .light .header__container-nav_list a {
   color: #545454;
@@ -13,7 +17,7 @@
 
 .light .logo-title__subtitle,
 .light a.active-li,
-.header.light a:hover span,
+.header.light a:hover h1,
 .header.light a:hover {
   color: #292929;
 }
