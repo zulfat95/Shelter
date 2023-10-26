@@ -70,3 +70,58 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .section-donation {
+    &__container {
+      width: 768px;
+      min-height: 783px;
+      padding: 80px 132px 100px 131px;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .section-donation {
+    width: 100%;
+    &__container {
+      width: 320px;
+      min-height: 542px;
+      padding: 42px 10px;
+      box-sizing: border-box;
+    }
+    &__image {
+      width: 260px;
+      height: 135px;
+      background-size: cover;
+    }
+    &__content {
+      width: 300px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      &-card {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      &-h3 {
+        font-size: 25px;
+        height: 64px;
+        text-align: center;
+      }
+      &-description {
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+        &__content-description-extra {
+          text-align: justify;
+          width: 280px;
+        }
+      }
+    }
+    .content-card__text {
+      font-size: 15px;
+      line-height: 110%;
+    }
+  }
+}

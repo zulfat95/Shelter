@@ -93,3 +93,87 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .section-help {
+    width: 100%;
+    &__container {
+      width: 768px;
+      min-height: 779px;
+      padding: 80px 69px 100px;
+      &-wrapper {
+        width: 630px;
+      }
+    }
+    &__elements {
+      gap: 55px 60px;
+      &-elem {
+        width: 170px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .section-help {
+    width: 100%;
+    &__h3 {
+      font-size: 25px;
+    }
+    &__container {
+      width: 320px;
+      min-height: 745px;
+      padding: 42px 15px;
+      &-wrapper {
+        width: 290px;
+        row-gap: 42px;
+      }
+    }
+    &__elements {
+      justify-content: flex-start;
+      gap: 30px;
+      &-elem {
+        width: 130px;
+        row-gap: 20px;
+        &-text {
+          font-size: 15px;
+        }
+        &-food {
+          width: 40px;
+          height: 50px;
+          background-size: cover;
+        }
+        &-transport, &-toys, &-medicines {
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+        }
+        &-bowls {
+          background-size: cover;
+          width: 50px;
+          height: 47px;
+        }
+        &-shampoos {
+          width: 26px;
+          height: 50px;
+          background-size: cover;
+        }
+        &-vitamins {
+          width: 50px;
+          height: 45px;
+          background-size: cover;
+        }
+        &-collars {
+          width: 50px;
+          height: 47px;
+          background-size: cover;
+        }
+        &-sleeping {
+          width: 47px;
+          height: 50px;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

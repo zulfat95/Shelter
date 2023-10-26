@@ -37,3 +37,45 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .section-about {
+    &__container {
+      width: 768px;
+      flex-direction: column-reverse;
+      row-gap: 80px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .section-about {
+    &__container {
+      width: 320px;
+      padding: 0;
+      padding-top: 48px;
+      padding-bottom: 42px;
+    }
+    &__image {
+      background-size: contain;
+      width: 260px;
+      height: 353px;
+      margin-top: 75px;
+    }
+    &__content {
+      width: 300px;
+      &-h3 {
+        font-size: 25px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        width: 300px;
+      }
+      &-description {
+        width: 270px;
+        margin: 0 auto;
+        line-height: 160%;
+        text-align: justify;
+      }
+    }
+  }
+}
