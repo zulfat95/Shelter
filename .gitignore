@@ -43,10 +43,10 @@ build/Release
 
 # node_modules
 # node_modules/*
-!node_modules/normalize.css/
-node_modules/normalize.css/*
-!node_modules/normalize.css/normalize.css
-!node_modules/normalize.css/package.json
+!node_modules/normalize/
+node_modules/normalize/*
+!node_modules/normalize/normalize.css
+!node_modules/normalize/package.json
 
 jspm_packages/
 
