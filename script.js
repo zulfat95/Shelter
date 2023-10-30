@@ -1,20 +1,8 @@
-// const printNumbers = (from, to) => {
-//   let i = from;
-//   while(i <= to) {
-//     console.log(i);
-//     i++;
-//     }
-// };
+const burgerButtonActive = document.querySelector('.header__container-nav_burger');
+const containerBurger = document.querySelector('.header__container-nav_burger_show');
 
-setTimeout(function print(from, to) {
-  for (let i = from; i <= to; i++) {
-    console.log(i);
-  }
-  // setTimeout(print, 2000, 1,3);
-}, 1000);
-  
- 
-// setInterval(printNumbers, 2000, 1,3);
-// printNumbers(1,3);
-//  let timerId = setTimeout(printNumbers, 1000, 1, 3); 
-//  clearInterval(timerId);
+burgerButtonActive.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  containerBurger.classList.toggle('active-burger');
+})
+
