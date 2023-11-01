@@ -129,4 +129,11 @@
     margin-top: 0;
     column-gap: 10px;
   }
+  .light a.active-li {
+    color: #cdcdcd;
+    border-bottom: 3px solid #F1CDB3;
+  }
+  .light .burger-lines-white {
+    background-color: #F1CDB3;
+  }
 }
