@@ -63,7 +63,7 @@
           
           <div class="section-pets__slider-cats-container">
             
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="katrine">
               <div class="section-pets__slider-cat-image-katrine"></div>
               <h4 class="section-pets__slider-cat-h4">Katrine</h4>
               <button class="section-pets__slider-cat-button">
@@ -71,7 +71,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="jennifer">
               <div class="section-pets__slider-cat-image-jennifer"></div>
               <h4 class="section-pets__slider-cat-h4">Jennifer</h4>
               <button class="section-pets__slider-cat-button">
@@ -79,7 +79,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="woody">
               <div class="section-pets__slider-cat-image-woody"></div>
               <h4 class="section-pets__slider-cat-h4">Woody</h4>
               <button class="section-pets__slider-cat-button">
@@ -87,7 +87,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="sophia">
               <div class="section-pets__slider-cat-image-sophia"></div>
               <h4 class="section-pets__slider-cat-h4">Sophia</h4>
               <button class="section-pets__slider-cat-button">
@@ -95,7 +95,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="timmy">
               <div class="section-pets__slider-cat-image-timmy"></div>
               <h4 class="section-pets__slider-cat-h4">Timmy</h4>
               <button class="section-pets__slider-cat-button">
@@ -103,7 +103,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="charly">
               <div class="section-pets__slider-cat-image-charly"></div>
               <h4 class="section-pets__slider-cat-h4">Charly</h4>
               <button class="section-pets__slider-cat-button">
@@ -111,7 +111,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="scarlett">
               <div class="section-pets__slider-cat-image-scarlett"></div>
               <h4 class="section-pets__slider-cat-h4">Scarlett</h4>
               <button class="section-pets__slider-cat-button">
@@ -119,7 +119,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="freddie">
               <div class="section-pets__slider-cat-image-freddie"></div>
               <h4 class="section-pets__slider-cat-h4">Freddie</h4>
               <button class="section-pets__slider-cat-button">
@@ -132,11 +132,11 @@
         </div>
         
         <div class="light section-pets__slider-pagination">
-          <button class="section-pets__slider-switcher two-arrow-left inactive"><<</button>
-          <button class="section-pets__slider-switcher arrow-left inactive"><</button>
-          <button class="section-pets__slider-switcher page">1</button>
-          <button class="section-pets__slider-switcher arrow-right active">></button>
-          <button class="section-pets__slider-switcher two-arrow-right active">>></button>
+          <button class="section-pets__slider-switcher two-arrow-left inactive" data-value="1"><<</button>
+          <button class="section-pets__slider-switcher arrow-left inactive" data-value="1"><</button>
+          <button class="section-pets__slider-switcher page" data-value="1">1</button>
+          <button class="section-pets__slider-switcher arrow-right active" data-value="2">></button>
+          <button class="section-pets__slider-switcher two-arrow-right active" data-value="6">>></button>
         </div>
 
       </div>
@@ -179,6 +179,17 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <div class="modal">
+    <div class="modal-popup">
+      <button class="close-button" type="button"></button>
+      <div class="modal-content">
+        
+      </div>
+    </div>
+  </div>
+  <script src="scripts/burger.js"></script>
+  <script src="scripts/modal.js" type="module"></script>
+  <script src="scripts/pagination.js" type="module"></script>
+  
 </body>
 </html>

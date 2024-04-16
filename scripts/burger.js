@@ -16,13 +16,3 @@ containerBurger.addEventListener('click', () => {
   bodyElement.classList.toggle('no-scroll');
   burgerLines.forEach((item) => item.classList.toggle('burger-lines-white'));
 });
-
-
-
-
-// const target = evt.target.closest('header__container-nav_burger_show');
-// target.addEventListener('click', (evt) => {
-//   evt.preventDefault();
-//   containerBurger.classList.toggle('active-burger-ul');
-//   burgerButtonActive.classList.toggle('active-burger');
-// })

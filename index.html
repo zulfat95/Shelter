@@ -84,13 +84,13 @@
         </h3>
         <div class="section-pets__slider">
           
-          <a href="#" class="section-pets__slider-switcher">
+          <a class="section-pets__slider-switcher">
             <div class="section-pets__slider-switcher-left-arrow"></div>
           </a>
           
           <div class="section-pets__slider-cats-container">
-            
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cats-container_block">
+            <div class="section-pets__slider-cat" data-name="katrine">
               <div class="section-pets__slider-cat-image-katrine"></div>
               <h4 class="section-pets__slider-cat-h4">Katrine</h4>
               <button class="section-pets__slider-cat-button">
@@ -98,7 +98,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="jennifer">
               <div class="section-pets__slider-cat-image-jennifer"></div>
               <h4 class="section-pets__slider-cat-h4">Jennifer</h4>
               <button class="section-pets__slider-cat-button">
@@ -106,7 +106,7 @@
               </button>
             </div>
 
-            <div class="section-pets__slider-cat">
+            <div class="section-pets__slider-cat" data-name="woody">
               <div class="section-pets__slider-cat-image-woody"></div>
               <h4 class="section-pets__slider-cat-h4">Woody</h4>
               <button class="section-pets__slider-cat-button">
@@ -114,9 +114,49 @@
               </button>
             </div>
 
+            <div class="section-pets__slider-cat" data-name="scarlett">
+              <div class="section-pets__slider-cat-image-scarlett"></div>
+              <h4 class="section-pets__slider-cat-h4">Scarlett</h4>
+              <button class="section-pets__slider-cat-button">
+                <span class="section-pets__slider-cat-button-text">Learn more</span>
+              </button>
+            </div>
+
+            <div class="section-pets__slider-cat" data-name="sophia">
+              <div class="section-pets__slider-cat-image-sophia"></div>
+              <h4 class="section-pets__slider-cat-h4">Sophia</h4>
+              <button class="section-pets__slider-cat-button">
+                <span class="section-pets__slider-cat-button-text">Learn more</span>
+              </button>
+            </div>
+
+            <div class="section-pets__slider-cat" data-name="freddie">
+              <div class="section-pets__slider-cat-image-freddie"></div>
+              <h4 class="section-pets__slider-cat-h4">Freddie</h4>
+              <button class="section-pets__slider-cat-button">
+                <span class="section-pets__slider-cat-button-text">Learn more</span>
+              </button>
+            </div>
+
+            <div class="section-pets__slider-cat" data-name="charly">
+              <div class="section-pets__slider-cat-image-charly"></div>
+              <h4 class="section-pets__slider-cat-h4">Charly</h4>
+              <button class="section-pets__slider-cat-button">
+                <span class="section-pets__slider-cat-button-text">Learn more</span>
+              </button>
+            </div>
+
+            <div class="section-pets__slider-cat" data-name="timmy">
+              <div class="section-pets__slider-cat-image-timmy"></div>
+              <h4 class="section-pets__slider-cat-h4">Timmy</h4>
+              <button class="section-pets__slider-cat-button">
+                <span class="section-pets__slider-cat-button-text">Learn more</span>
+              </button>
+            </div>
+            </div>
           </div>
           
-          <a href="#" class="section-pets__slider-switcher">
+          <a class="section-pets__slider-switcher">
             <div class="section-pets__slider-switcher-right-arrow"></div>
           </a>
         </div>
@@ -228,6 +268,17 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
+  <div class="modal">
+    <div class="modal-popup">
+      <button class="close-button" type="button"></button>
+      <div class="modal-content">
+        
+      </div>
+    </div>
+  </div>
+  <script src="scripts/burger.js"></script>
+  <script src="scripts/slider.js"></script>
+  <script src="scripts/modal.js" type="module"></script>
+  <!-- <script src="scripts/pagination.js" type="module"></script> -->
 </body>
 </html>
