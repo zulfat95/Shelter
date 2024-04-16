@@ -1,0 +1,127 @@
+.section-donation {
+  background-color: #F6F6F6;
+  &__container {
+    width: 1280px;
+    height: 462px;
+    margin: 0 auto;
+    padding: 80px 183px 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+  }
+  &__image {
+    background: url('../../assets/img/donation-dog.png');
+    width: 505px;
+    height: 261px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    row-gap: 20px;
+    &-h3 {
+      @include font_h3;
+      width: 300px;
+      height: 90px;
+    }
+    &-description {
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 110%;
+      letter-spacing: 0.06em;
+    }
+    &-card {
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 15px;
+      max-width: 350px;
+      padding: 10px 15px;
+      box-sizing: border-box;
+      background-color: #F1CDB3;
+      border-radius: 9px;
+      .content-card__image {
+        background: url('../../assets/svg/credit-card.svg');
+        width: 30px;
+        height: 23px;
+      }
+      .content-card__text {
+        color: #545454;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+      }
+    }
+    &-description-extra {
+      font-family: 'Arial';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #B2B2B2;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-donation {
+    &__container {
+      width: 768px;
+      min-height: 783px;
+      padding: 80px 132px 100px 131px;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .section-donation {
+    width: 100%;
+    &__container {
+      width: 320px;
+      min-height: 542px;
+      padding: 42px 10px;
+      box-sizing: border-box;
+    }
+    &__image {
+      width: 260px;
+      height: 135px;
+      background-size: cover;
+    }
+    &__content {
+      width: 300px;
+      box-sizing: border-box;
+      padding: 0 10px;
+      &-card {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      &-h3 {
+        font-size: 25px;
+        height: 64px;
+        text-align: center;
+      }
+      &-description {
+        line-height: 160%;
+        letter-spacing: 0;
+        text-align: center;
+        &__content-description-extra {
+          text-align: justify;
+          width: 280px;
+        }
+      }
+    }
+    .content-card__text {
+      font-size: 15px;
+      line-height: 110%;
+    }
+  }
+}

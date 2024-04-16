@@ -1,0 +1,248 @@
+.section-pets {
+  background-color: #F6F6F6;
+  &__container {
+    margin: 0 auto;
+    width: 1280px;
+    min-height: 877px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+    padding: 80px 0 100px;
+  }
+  &__h3 {
+    @include font_h3;
+    width: 400px;
+    text-align: center;
+  }
+  &__slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 53px;
+    transition: 0.5s all ease;
+    &-switcher {
+      width: 52px;
+      height: 52px;
+      border: 2px solid #F1CDB3;
+      border-radius: 100px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.5s;
+      &:hover {
+        background-color: #FDDCC4;
+        cursor: pointer;
+        border: 2px solid #FDDCC4;
+        transition: 0.5s all ease;
+      }
+      &-left-arrow {
+        background: url('../../assets/svg/Arrowleft.svg');
+        width: 14px;
+        height: 6px;
+        // border: 2px solid #F1CDB3;
+        // border-radius: 100px;
+        // padding: 15px;
+      }
+      &-right-arrow {
+        background: url('../../assets/svg/Arrowright.svg');
+        width: 14px;
+        height: 6px;
+      }
+    }
+    &-cats-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 90px;
+      overflow: hidden;
+      transition: 0.5s all ease;
+      // box-sizing: border-box;
+      // border: 1px solid black;
+      width: 990px; // was 1000px; TODO: Сделать дополнительный слой для transform: translateX()
+      &_block {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 90px;
+        transition: 0.5s;
+      }
+      .section-pets__slider-cat {
+        $imageSize: 270px;
+        background: #FAFAFA;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 30px;
+        height: 435px;
+        transition: 0.5s all ease;
+        animation: modal 0.5s alternate ease;
+        // border: 1px solid black;
+        &:hover {
+          cursor: pointer;
+          background: #FFFFFF;
+          box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          transition: 0.5s all ease;
+          .section-pets__slider-cat-button {
+            background-color: #FDDCC4;
+            border: #FDDCC4;
+            transition: background-color 0.5s ease;
+          }
+        }
+        &-image-katrine {
+          background: url('../../assets/img/pets-katrine.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-image-jennifer {
+          background: url('../../assets/img/pets-jennifer.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-image-woody {
+          background: url('../../assets/img/pets-woody.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-image-scarlett {
+          background: url('../../assets/img/pets-scarlett.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-image-sophia {
+          background: url('../../assets/img/pets-sophia.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-image-freddie {
+          background: url('../../assets/img/pets-freddie.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-image-charly {
+          background: url('../../assets/img/pets-charly.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-image-timmy {
+          background: url('../../assets/img/pets-timmy.png');
+          width: $imageSize;
+          height: $imageSize;
+        }
+        &-h4 {
+          color: #545454;
+          font-weight: 400;
+          font-family: 'Georgia';
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: 0.06em;
+        }
+        &-button {
+          border-radius: 100px;
+          background-color: #FAFAFA;
+          width: 187px;
+          height: 52px;
+          transition: 0.5s all ease;
+          border: 2px solid #F1CDB3;
+          cursor: pointer;
+          &-text {
+            font-weight: 400;
+            font-family: 'Georgia';
+            font-style: normal;
+            font-size: 17px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: #292929;
+          }
+        }
+      }
+    }
+  }
+  &__button {
+    background: #F1CDB3;
+    border-radius: 100px;
+    width: 261px;
+    height: 52px;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #F1CDB3;
+    transition: 0.5s all ease;
+    &:hover {
+      cursor: pointer;
+      background-color: #FDDCC4;
+      transition: 0.5s all ease;
+      border: 2px solid #FDDCC4;
+    }
+    &-text {
+      font-size: 17px;
+      font-family: 'Georgia';
+      font-weight: 400;
+      line-height: 130%;
+      color: #292929;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+
+.light .section-pets__slider-cats-container {
+  width: 1200px;
+}
+
+@keyframes modal {
+  0% {opacity: 0;};
+  100% {opacity: 1;};
+}
+
+@media (max-width: 768px) {
+  .section-pets {
+    width: 100%;
+    &__container {
+      width: 768px;
+    }
+    &__slider {
+      column-gap: 12px;
+    }
+    .section-pets__slider-cats-container {
+      flex-wrap: wrap;
+      column-gap: 40px;
+      height: 435px;
+      max-width: 580px;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .section-pets {
+    width: 100%;
+    &__container {
+      width: 320px;
+      padding-top: 42px;
+      padding-bottom: 42px;
+      row-gap: 42px;
+      min-height: 791px;
+    }
+    .section-pets__h3 {
+      font-size: 25px;
+    }
+    &__slider {
+      row-gap: 20px;
+      flex-wrap: wrap;
+      column-gap: 80px;
+      &-switcher {
+        order: 1;
+      }
+    }
+  }
+  .light .section-pets__slider-cats-container {
+    width: 270px;
+    overflow: hidden;
+  }
+}

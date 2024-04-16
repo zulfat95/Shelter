@@ -1,0 +1,139 @@
+.light .header__container {
+  width: 1280px;
+  box-sizing: border-box;
+  // height: 908px; //
+  margin: 0 auto;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.light h1 {
+  margin: 0;
+}
+
+.light .logo-title__title,
+.light .header__container-nav_list a {
+  color: #545454;
+}
+
+.light .logo-title__subtitle,
+.light a.active-li,
+.header.light a:hover h1,
+.header.light a:hover {
+  color: #292929;
+}
+
+.light .section-pets__slider-cats-container {
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 30px;
+}
+
+.light .section-pets__slider-cat-image {
+  $imageSize: 270px;
+  &-sophia {
+    background: url('../../assets/img/pets-sophia.png');
+    width: $imageSize;
+    height: $imageSize;
+  }
+  &-timmy {
+    background: url('../../assets/img/pets-timmy.png');
+    width: $imageSize;
+    height: $imageSize;
+  }
+  &-charly {
+    background: url('../../assets/img/pets-charly.png');
+    width: $imageSize;
+    height: $imageSize;
+  }
+  &-scarlett {
+    background: url('../../assets/img/pets-scarlett.png');
+    width: $imageSize;
+    height: $imageSize;
+  }
+  &-freddie {
+    background: url('../../assets/img/pets-freddie.png');
+    width: $imageSize;
+    height: $imageSize;
+  }
+}
+
+.light .section-pets__slider-pagination {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  .section-pets__slider-switcher {
+    font-family: 'Georgia';
+    color: #CDCDCD;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+  }
+  .section-pets__slider-switcher.inactive {
+    border: 2px solid #CDCDCD;
+    cursor: not-allowed;
+    &:hover {
+      background-color: rgba(0,0,0,0);
+    }
+  }
+  .section-pets__slider-switcher.active,
+  .section-pets__slider-switcher.page {
+    color: #292929;
+    background-color: #F6F6F6;
+    &:hover {
+      background-color: #FDDCC4;
+    }
+  }
+  .section-pets__slider-switcher.page {
+    background-color: #F1CDB3;
+    border: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .light .header__container {
+    width: 768px;
+    padding: 30px;
+  }
+  .light .section-pets__container {
+    height: 1733px;
+  }
+  .light .section-pets__slider-cats-container {
+    min-height: 1365px;
+    // box-sizing: border-box;
+    // overflow: hidden;
+  }
+  .light .section-pets__slider-pagination {
+    margin-top: 10px;
+  }
+  .light .section-pets__container {
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .light .header__container {
+    padding: 30px 20px;
+  }
+  .light .header__container-nav_burger-line {
+    background-color: #000000;
+  }
+  .light .section-pets__container {
+    row-gap: 40px;
+    max-height: 1649px;
+  }
+  .light .section-pets__slider-pagination {
+    margin-top: 0;
+    column-gap: 10px;
+  }
+  .light a.active-li {
+    color: #cdcdcd;
+    border-bottom: 3px solid #F1CDB3;
+  }
+  .light .burger-lines-white {
+    background-color: #F1CDB3;
+  }
+}
